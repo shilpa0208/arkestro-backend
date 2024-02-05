@@ -1,4 +1,4 @@
-# README
+# Arkestro backend
 
 A rails application that is used to demonstrate how a logged in user can view a table that contains deeply nested serialized records where various attributes on those records can be updated and persisted to the postgresql database.
 
