@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
   resources :registrations, only: [:create]
 
-  resources :projects, only: [:index]
+  resources :projects
     put 'projects/:id', to: "projects#update"
 
   resources :subtasks, only: [:index]

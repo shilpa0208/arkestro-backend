@@ -1,8 +1,4 @@
 class ProjectsController < ApplicationController
-    def index
-        @projects = Project.includes(tasks: [:subtasks]).all
-        render json: @projects, each_serializer: NestedProjectSerializer, include: '**'
-    end
 
     def update
         @project = Project.find(params[:id])
